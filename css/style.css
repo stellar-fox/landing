@@ -3063,6 +3063,7 @@ a.forum-item-title:hover {
 
 .vertical-date small {
   color: #0F2E53;
+  font-size: 90%;
   font-weight: 400;
 }
 
@@ -7859,7 +7860,7 @@ body.landing-page {
 }
 .landing-page .navbar-fixed-top.navbar-scroll {
   border-bottom: 1px solid rgba(244,176,4,0.7) !important;
-  
+
 }
 .landing-page .navbar.navbar-scroll .navbar-brand {
   margin-top: 5px;
@@ -9553,4 +9554,34 @@ body.md-skin {
   #page-wrapper {
     margin: 0;
   }
+}
+
+.stellar-style {
+    font-size: 1.5em;
+}
+
+.stellar-featurette {
+    font-size: 1.3em;
+}
+
+.stellar-gray {
+    color: rgb(135, 135, 135);
+}
+
+.stellar-h2 {
+    font-size: 1.1em;
+}
+
+.stellar-dark {
+    color: rgb(77, 77, 77);
+}
+
+.stellar-base .stellar-h2 {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.stellar-base small {
+    font-weight: 400;
+    font-size: 90%;
 }
