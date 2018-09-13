@@ -778,7 +778,6 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus {
   background-color: #0d2746;
   border-color: #0d2746;
-  color: #FFFFFF;
 }
 
 .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
@@ -854,13 +853,13 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 .btn-warning {
   background-color: #F4B004;
   border-color: #F4B004;
-  color: #FFFFFF;
+  color: rgb(32, 32, 32);
 }
 
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning, .btn-warning:active:focus, .btn-warning:active:hover, .btn-warning.active:hover, .btn-warning.active:focus {
   background-color: #e5a504;
   border-color: #e5a504;
-  color: #FFFFFF;
+  color: rgb(32, 32, 32);
 }
 
 .btn-warning:active, .btn-warning.active, .open .dropdown-toggle.btn-warning {
@@ -8147,9 +8146,8 @@ body.landing-page {
 .landing-page .btn-primary {
   background-color: #0F2E53;
   border-color: #0F2E53;
-  color: #FFFFFF;
+  color: rgb(219, 219, 219);
   font-size: 14px;
-  padding: 10px 20px;
   font-weight: 600;
 }
 .landing-page .btn-primary:hover,
