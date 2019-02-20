@@ -9588,3 +9588,42 @@ body.md-skin {
     text-align: center;
     margin: 0 auto 0 auto;
 }
+
+/*================================== CUSTOM ==================================*/
+.flex-box-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-box-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.items-flex-start {
+    align-items: flex-start;
+}
+
+.items-flex-end {
+    align-items: flex-end;
+}
+
+.items-centered {
+    align-items: center;
+}
+
+.content-centered {
+    justify-content: center;
+}
+
+.content-flex-end {
+    justify-content: flex-end;
+}
