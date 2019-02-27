@@ -694,6 +694,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   color: #fff;
   padding: 6px 12px;
   font-size: 14px;
+  margin-right: 5px;
 }
 
 .top-navigation .navbar-nav .open .dropdown-menu > li > a, .top-navigation .navbar-nav .open .dropdown-menu .dropdown-header {
@@ -7809,24 +7810,12 @@ body.landing-page {
 }
 .landing-page .navbar-default .navbar-brand:hover,
 .landing-page .navbar-default .navbar-brand:focus {
-  /*background: #0b223d;*/
   color: #fff;
 }
 .landing-page .navbar-default .navbar-brand {
   color: #fff;
-  height: auto;
-  display: block;
-  font-size: 14px;
-  background: #0F2E53;
-  padding: 15px 20px 15px 20px;
-  border-radius: 0 0 5px 5px;
-  font-weight: 700;
   transition: all 0.3s ease-in-out 0s;
-  background: url("../../img/landing/stellar_fox_2.png");
-  background-repeat: no-repeat;
-  width: 250px;
-  height: 69px;
-  opacity: 0.8;
+  padding: 0px;
 }
 .landing-page .navbar-scroll.navbar-default .nav li a {
   color: #676a6c;
@@ -7852,25 +7841,27 @@ body.landing-page {
 }
 .landing-page .navbar-default .navbar-nav > .active > a,
 .landing-page .navbar-default .navbar-nav > .active > a:hover {
-  border-top: 6px solid #0F2E53;
+  border-top: 2px solid rgba(15, 46, 83, 0.8);
+  margin-top: 4px;
 }
+
+@media (max-width: 768px) {
+  .landing-page .navbar-default .navbar-nav > .active > a,
+  .landing-page .navbar-default .navbar-nav > .active > a:hover {
+    border-top: none;
+  } 
+}
+
 .landing-page .navbar-fixed-top {
   border: none !important;
 }
 .landing-page .navbar-fixed-top.navbar-scroll {
-  border-bottom: 1px solid rgba(244,176,4,0.7) !important;
+  /* border-bottom: 1px solid rgba(244,176,4,0.7) !important; */
+  border: none !important;
 
 }
 .landing-page .navbar.navbar-scroll .navbar-brand {
-  margin-top: 5px;
-  border-radius: 5px;
-  font-size: 12px;
-  padding: 1px;
-  width: 250px;
-  height: 69px;
-  background: url("../../img/landing/stellar_fox_2.png");
-  background-repeat: no-repeat;
-  opacity: 0.8;
+  padding: 0px;
 }
 .landing-page .header-back {
   height: 470px;
@@ -7963,12 +7954,36 @@ body.landing-page {
   text-shadow: -1px 0 10px #0F2E53, 0 1px 10px #0F2E53, 1px 0 10px #0F2E53, 0 -1px 10px #0F2E53;
   opacity: 0.8;
 }
+@media (max-width: 768px) {
+  .landing-page .carousel-caption h1 {
+    padding-right: 10px;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: -1.5px;
+    color: #F4B004;
+    text-shadow: -1px 0 10px #0F2E53, 0 1px 10px #0F2E53, 1px 0 10px #0F2E53, 0 -1px 10px #0F2E53;
+    opacity: 0.8;
+  }
+}
+
 .landing-page .carousel-caption p {
   font-weight: 700;
   color: #d7f9ff;
   text-shadow: -1px 0 10px #3c6997, 0 1px 10px #3c6997, 1px 0 10px #3c6997, 0 -1px 10px #3c6997;
   opacity: 0.8;
 }
+
+@media (max-width: 768px) {
+  .landing-page .carousel-caption p {
+    padding-right: 10px;
+    font-weight: 100;
+    font-size: 11px;
+    color: #d7f9ff;
+    text-shadow: -1px 0 10px #3c6997, 0 1px 10px #3c6997, 1px 0 10px #3c6997, 0 -1px 10px #3c6997;
+    opacity: 0.8;
+  }
+}
+
 .landing-page .caption-link {
   color: #fff;
   margin-left: 10px;
@@ -8229,8 +8244,8 @@ body.landing-page {
     margin-top: 6px;
   }
   .landing-page .navbar-default {
-    background-color: #fff;
-    border-color: #fff;
+    background-color: rgb(244, 176, 4);
+    border-color: rgb(244, 176, 4);
     padding: 15px 0;
   }
   .landing-page .navbar-default .navbar-nav > .active > a:focus {
@@ -8259,8 +8274,8 @@ body.landing-page {
     margin-top: 6px;
     border-radius: 5px;
     font-size: 12px;
-    padding: 10px;
-    height: 72px;
+    /* padding: 10px; */
+    /* height: 40px; */
   }
   .landing-page .navbar-wrapper .navbar {
     padding-left: 15px;
@@ -8285,7 +8300,7 @@ body.landing-page {
     float: none;
   }
   .landing-page .navbar .navbar-header .navbar-toggle {
-    background-color: #ffffff;
+    background-color: rgb(244, 176, 4);
     padding: 9px 10px;
     border: none;
   }
@@ -9626,4 +9641,34 @@ body.md-skin {
 
 .content-flex-end {
     justify-content: flex-end;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
+
+.sf-logo {
+  position: fixed;
+  top: 5px;
+  left: 50px;
+  width: 60px;
+  height: 60px;
+  z-index: 30000;
+  background: url("../../img/landing/sf.logo.png");
+  background-size: 100%;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .sf-logo {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    z-index: 30000;
+    background: url("../../img/landing/sf.logo.png");
+    background-size: 100%;
+  }
 }
