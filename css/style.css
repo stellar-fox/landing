@@ -7849,7 +7849,7 @@ body.landing-page {
   .landing-page .navbar-default .navbar-nav > .active > a,
   .landing-page .navbar-default .navbar-nav > .active > a:hover {
     border-top: none;
-  } 
+  }
 }
 
 .landing-page .navbar-fixed-top {
@@ -9658,6 +9658,13 @@ body.md-skin {
   background: url("../../img/landing/sf.logo.png");
   background-size: 100%;
   border-radius: 3px;
+}
+
+
+.stellar-logo {
+  width: 80px;
+  margin-top: 1.5rem;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
