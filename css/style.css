@@ -9667,6 +9667,12 @@ body.md-skin {
   opacity: 0.8;
 }
 
+
+.mediaicon {
+    display: inline-block;
+}
+
+
 @media (max-width: 768px) {
   .sf-logo {
     position: fixed;
